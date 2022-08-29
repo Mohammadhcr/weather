@@ -1,0 +1,116 @@
+body{
+    background: #050505;
+}
+
+.container{
+    min-width: fit-content;
+    max-width: 450px;
+    padding: 2rem 1rem;
+    margin: auto;
+    
+
+    .title h1{
+        font-size: 2.7rem;
+        text-align: center;
+        color: #f5f5f5;
+        user-select: none;
+    }
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+
+    input{
+        padding: 0.8rem;
+        outline: none;
+        border: 2px solid #101010;
+        border-radius: 0.7rem;
+        font-size: 1.1rem;
+        background: #101010;
+        color: #f5f5f5;
+
+        &:focus{
+            border: 2px solid #202020;
+        }
+
+        &::placeholder{
+            font-size: 1rem;
+            color: #ccc;
+        }
+    }
+
+    button{
+        background: #C33764;
+        background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+        background: -moz-linear-gradient(to right, #1D2671, #C33764);
+
+        color: #f5f5f5;
+        border: none;
+        cursor: pointer;
+        padding: 0.8rem;
+        margin-top: 1rem;
+        border-radius: 0.7rem;
+        font-size: 1.1rem;
+        
+    }
+}
+
+.info{
+    background: #101010;
+    border-radius: 0.7rem;
+    text-align: center;
+    color: #f5f5f5;
+    user-select: none;
+    
+
+    .general{
+        border-bottom: 1px solid #252525;
+        line-height: 3.2rem;
+
+        .names{
+            font-size: 1.4rem;
+        }
+
+        .temp{
+            font-size: 3rem;
+        }
+
+        .desc{
+            font-size: 1rem;
+        }
+    }
+
+    .details{
+        padding: 1.2rem 0;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #252525;
+        font-size: 0.9rem;
+
+        .minTemp{
+            color: #0471A6;
+        }
+
+        .maxTemp{
+            color: #DD403A;
+        }
+    }
+
+    .dateAndTime{
+        padding: 1.2rem 0;
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.9rem;
+    }
+}
+
+.enterName{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    background: #101010;
+    padding: 2rem 0;
+    border-radius: 0.7rem;
+}
